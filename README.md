@@ -1,2 +1,2 @@
-# booklist_redux_rUp
-booklist_redux_rUp
+# rollup practice react-thunk as promise
+rollup practice react-thunk as promise
