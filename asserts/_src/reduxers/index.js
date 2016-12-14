@@ -1,12 +1,10 @@
 import { combineReducers } from 'redux';
 import BooklistReducer from './reducer_books';
-import ActiveBookReducer from './reducer_active_book';
-import Dropdownlist from './reducer_clickdropdown';
+import ReceivedUsers from './reducer_users.js';
 
 const RootReducer = combineReducers({
 	booksCollection: BooklistReducer,
-	theActiveBook: ActiveBookReducer,
-	dpList: Dropdownlist
+	users: ReceivedUsers
 });
 
 export default RootReducer;
