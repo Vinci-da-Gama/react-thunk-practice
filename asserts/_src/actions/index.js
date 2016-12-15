@@ -11,8 +11,17 @@ export const GetUsersThunk = () => {
 	const usersReq = axios.get(usersUrl);
 	console.log('12 -- usersReq is: ', usersReq);
 
-	return {
-		type: ASYN_THUNK_TYPE,
-		payload: usersReq
-	};
+	return (dispatch) => {
+		usersReq
+		.then(({data}) => {
+			console.log('17 -- data is: ', data);
+			dispatch({
+				type: ASYN_THUNK_TYPE,
+				payload: data
+			});
+		})
+		.catch((err) => {
+			return err;
+		});
+	}
 }
