@@ -10,7 +10,6 @@ import ConfigStore from './store-config.js';
 
 import { Router, browserHistory } from 'react-router';
 import { Provider } from 'react-redux';
-import rPrimise from 'redux-promise';
 
 import routes from './routes';
 
